@@ -6,4 +6,7 @@
     border: 0;
 }
 
-
+.card-img-top {
+    height: 240px;
+    width:100%;    
+}
