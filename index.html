@@ -30,16 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="# ">Inicio</a>
+                        <a class="nav-link text-light" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light d-none d-md-block" href="# ">Quienes somos</a>
+                        <a class="nav-link text-light d-none d-md-block" href="#quienes-somos">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="# ">Destacados</a>
+                        <a class="nav-link text-light" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="# ">Contacto</a>
+                        <a class="nav-link text-light" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -112,7 +112,7 @@
     </section>
 
     <!--Destacados-->
-    <section id="destacados " style="background-color: black">
+    <section id="destacados" style="background-color: black">
         <h2 class="text-center text-light py-5">DESTACADOS</h2>
         <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
@@ -163,8 +163,8 @@
     <!--Contacto-->
     <section id="contacto" style="background-color: black;">
         <h2 class="text-center text-light py-5">CONTACTO</h2>
-        <form class="px-3" style= "width: 100%; mx-3;">
-            
+        <form class="px-3" style="width: 100%; mx-3;">
+
             <div class="mb-3 text-light">
                 <label for="b" class="form-label">Nombre</label>
                 <input type="texto" class="form-control" id="b" placeholder="Nombre">
@@ -178,8 +178,9 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1"
                     rows="3">Escribe aqui tu mensaje</textarea>
             </div>
-            <div class="text-start my-3 py-5">
-                <button type="submit" class="btn btn-info text-light">Enviar</button>
+            <div id="boton-enviar" class="text-start my-3 py-5">
+                <button type="submit" class="btn btn-info text-light">Enviar
+                </button>
             </div>
         </form>
     </section>
@@ -201,7 +202,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <!--scripts-->
@@ -213,6 +213,11 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("#boton-enviar").click(function () {
+            alert("Mensaje enviado!");
+        });
+    </script>
 </body>
 
 </html>
